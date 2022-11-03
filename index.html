@@ -11,10 +11,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Nunito+Sans:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap">
-    <link rel="stylesheet" href="./assets/style/index.css">
+    <link rel="stylesheet" href="./assets/style/base.css">
     <script src="./assets/script/index.js" defer></script>
   </head>
   <body>
-    
+    <main>
+      <div class="container center">
+        <div class="flex">
+          <div class="cover">
+            <div class="number">
+              <input type="text" class="input" name="number">
+            </div>
+            <button class="btn guess">Guess</button>
+            <div class="output">
+              <p>Pick a number between 1 and 10</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="replay">
+      <button class="btn start">Start Game</button>
+    </div>
   </body>
 </html>
