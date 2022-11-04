@@ -92,5 +92,5 @@ h1, p, input, button, .ouput {
 /* Guess Button */
 .guess {
   border-radius: 8px;
-  width: 80%;
+  width: 350px;
 }
