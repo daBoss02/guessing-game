@@ -11,6 +11,10 @@
   --app-blue-hover: #364ee6;
 }
 
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+/* General                                         */
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+
 body {
 background-color:var(--app-dark-bg);
 }
@@ -19,7 +23,7 @@ background-color:var(--app-dark-bg);
 width: min(100% - 30px, 1280px);
 margin-inline: auto;
 }
-h1, p, input, button {
+h1, p, input, button, .ouput {
   color: #f4f6f8;
 }
 
@@ -29,6 +33,7 @@ h1, p, input, button {
   place-items: center;
 }
 
+/* Cover */
 .cover {
   display: flex;
   width: 100%;
@@ -38,6 +43,11 @@ h1, p, input, button {
   width: 100%;
   text-align: center;
 }
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+/* Number/Input                                    */
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+
 .number {
   height: 130px;
   width: 130px;
@@ -58,24 +68,29 @@ h1, p, input, button {
   text-align: center;
 }
 
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+/* Buttons                                         */
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* General Buttons */
+.btn {
+  padding: 10px 15px;
+  background-color: var(--app-purple);
+}
+.btn:hover {
+  background-color: var(--app-purple-hover);
+}
+
+/* Start Button */
 .start {
   position: absolute;
   top: 40px;
   right: 40px;
-  background-color: var(--app-blue);
   border-radius: 40px;
 }
-.start:hover {
-  background-color: var(--app-blue-hover);
-}
-.btn {
-  padding: 10px 15px;
-}
+
+/* Guess Button */
 .guess {
   border-radius: 8px;
-  background-color: var(--app-purple);
   width: 80%;
-}
-.guess:hover {
-  background-color: var(--app-purple-hover);
 }
