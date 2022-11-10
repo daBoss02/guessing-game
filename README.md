@@ -1,4 +1,4 @@
-## Click me if you can
+## Guessing Game
 
 A simple guessing game with number 1-10.
 
